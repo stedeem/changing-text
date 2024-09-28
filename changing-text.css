@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f3f3f3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.transform {
+    position: relative;
+    weight: 60%;
+}
+
+h1 {
+    position: absolute;
+    transform: translate( 50%, -100%);
+    top: 50%;
+    right: 50%;
+    text-transform:uppercase;
+    font-size: 250px;
+    text-shadow: -2px -2px 3px rgb(148, 147, 147);
+    color: white;
+}
+
+.black {
+    color: black;
+    clip-path: polygon(50% 0, 100% 0%, 0% 100%, 0 0%);
+}
+
+.white {
+    
+}
