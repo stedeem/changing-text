@@ -11,10 +11,13 @@ body {
 
 .transform {
     position: relative;
-    weight: 60%;
+    width: 70%;
 }
 
 h1 {
+    width: 100%;
+    margin:0;
+    padding:0;
     position: absolute;
     transform: translate( 50%, -100%);
     top: 50%;
@@ -27,9 +30,21 @@ h1 {
 
 .black {
     color: black;
-    clip-path: polygon(50% 0, 100% 0%, 0% 100%, 0 0%);
+    
 }
 
 .white {
-    
+    clip-path: polygon(0% 0, 0% 0%, 140% 0%, 0 70%);
+    /* clip-path: polygon(0% 0, 100% 0%, 100% 0%, 0 100%); */
+    overflow: hidden;
+    background: #f3f3f3;
+    transition: 700ms;
+}
+
+.white:hover {
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+.black:hover {
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
