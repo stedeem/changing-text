@@ -28,23 +28,28 @@ h1 {
     color: white;
 }
 
-.black {
-    color: black;
-    
-}
-
 .white {
+    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%); */
     clip-path: polygon(0% 0, 0% 0%, 140% 0%, 0 70%);
-    /* clip-path: polygon(0% 0, 100% 0%, 100% 0%, 0 100%); */
     overflow: hidden;
     background: #f3f3f3;
     transition: 700ms;
+}
+
+.black {
+    color: black;
 }
 
 .white:hover {
     clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
 }
 
-.black:hover {
-    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+.black:hover ~ h1{
+    /* clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 0%); */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
+button:hover ~ img {
+    margin-left:800px;
+    transition:10.0s;
+ }
